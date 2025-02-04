@@ -1,6 +1,10 @@
-package main;
+package main
 
+import "fmt"
 
 func main() {
-	print("Hello World");
+	// this way also print works
+	fmt.Println("Hello World")
+	// and this way also it works
+	print("Hello World!")
 }
