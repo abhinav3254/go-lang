@@ -19,14 +19,21 @@ func main() {
 
 	const inflationRate = 2.5
 
-	investmentAmount := 1000.0
-	years := 10.0
-	expectedReturnRate := 5.5
+	var investmentAmount float64
+	var years float64
+	var expectedReturnRate float64
 
 	// now taking user's input
 	// Here & is the pointer for the investmentAmount
 	// we can't directly pass investmentAmount instead we pass pointer of that variable
+	fmt.Print("Investment Amount: ")
 	fmt.Scan(&investmentAmount)
+
+	fmt.Print("Years: ")
+	fmt.Scan(&years)
+
+	fmt.Print("Expected Return Rate: ")
+	fmt.Scan(&expectedReturnRate)
 
 	// We can also keep different kind of data types like this by not defining the float64
 	// var investmentAmount, years = 1000, "10"
